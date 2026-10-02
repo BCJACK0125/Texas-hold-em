@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACE PATH 王牌之路｜德州撲克從零到高手</title>
+  <meta name="description" content="互動式德州撲克學院：起手牌範圍、算牌與底池賠率、實戰模擬教練、覆盤室與 GTO 觀念，一步步從新手練成高手。">
+  <meta name="theme-color" content="#07090c">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='10' y='4' width='44' height='56' rx='7' fill='%23f5efe0' stroke='%23d4af37' stroke-width='3'/><text x='32' y='44' font-size='30' text-anchor='middle' fill='%23111'>♠</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark">♠</span>
+      <span class="brand-text"><b>ACE PATH</b><small>王牌之路</small></span>
+    </a>
+    <nav class="mainnav" id="mainnav">
+      <a href="#/" data-route="lobby">大廳</a>
+      <a href="#/academy" data-route="academy">學院</a>
+      <a href="#/ranges" data-route="ranges">起手牌</a>
+      <a href="#/odds" data-route="odds">算牌</a>
+      <a href="#/table" data-route="table">實戰</a>
+      <a href="#/review" data-route="review">覆盤</a>
+      <a href="#/lab" data-route="lab">研究室</a>
+      <a href="#/glossary" data-route="glossary">辭典</a>
+    </nav>
+    <a class="player-chip" href="#/profile" id="playerChip" title="我的進度">
+      <span class="lvl-ring"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.5" class="ring-bg"/><circle cx="18" cy="18" r="15.5" class="ring-fg" id="lvlRing"/></svg><b id="lvlNum">1</b></span>
+      <span class="chip-text"><b id="lvlName">新手</b><small id="lvlXp">0 XP</small></span>
+    </a>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <footer class="footer">
+    <p>ACE PATH 王牌之路 · 僅供學習與娛樂，不涉及任何真錢賭博。範圍表為 6-max 100bb 現金桌的教學簡化版本。</p>
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
